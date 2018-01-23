@@ -16,7 +16,7 @@ apt-get install nodejs
         
 npm install -g --unsafe-perm \
        homebridge \
-       homebridge-server 
+       homebridge-telldus 
 
 chmod a+x /root/start.sh 
 
