@@ -19,8 +19,9 @@ EXPOSE 51826
 
 
 VOLUME /config
-COPY config.json /tmp/sample-config.json
 
 RUN apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+COPY config.json /tmp/sample-config.json
 
 CMD ["/root/start.sh"]
